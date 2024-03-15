@@ -36,7 +36,7 @@ upstream:
   nameOverride: backstage
   backstage:
     image:
-      pullSecret: redhat-gpte-devhub-pull-secret
+      pullSecret: ''
       registry: quay.io
       repository: rhdh/rhdh-hub-rhel9
       tag: 1.1-79
