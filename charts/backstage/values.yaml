@@ -36,11 +36,11 @@ upstream:
   nameOverride: backstage
   backstage:
     image:
-      pullSecrets:
-      - redhat-gpte-devhub-pull-secret
       registry: quay.io
       repository: rhdh/rhdh-hub-rhel9
       tag: 1.1-79
+      pullSecrets:
+      - redhat-gpte-devhub-pull-secret
     command: []
     # FIXME (tumido): USE POSTGRES_PASSWORD and POSTGRES_USER instead of POSTGRES_ADMIN_PASSWORD
     # This is a hack. In {fedora,rhel}/postgresql images, regular user is forbidden
